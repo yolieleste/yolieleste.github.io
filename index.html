@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>SKYWORTH NPI</title>
+		<title>SKYWORTH NPI WK10</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -17,9 +17,10 @@
 			 .reveal tr { /* from third row onwards */
 			    font-size: 65%;
 			  }
-			 .reveal p {font-size: 65%;}
-			 .reveal ol{font-size: 65%;}
 
+			 .reveal ol.fixtures{
+				font-size: 65%;
+			 }
 		</style>
 
 		<!-- Printing and PDF exports -->
@@ -42,8 +43,8 @@
 				<section id="Outline">
 					<h2>Outline</h2>
 					<ol>
-						<li>Advcance in indirect material preparation</li>
-						<li>Advance in manufactoring carrier fixture</li>
+						<li>Advance in indirect material preparation</li>
+						<li>Advance in manufacturing carrier fixture</li>
 						<li>SKYWORTH npi web app projects</li>
 					</ol>
 				
@@ -149,35 +150,172 @@
 					</table>
 				
 				</section>
-				<section id="_display_images_side_by_side">
+				<section id="FixtureDFM">
 					<h2>DFM for the carriers & assembly lines</h2>
 					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
 						<colgroup><col style="width:33%"></colgroup>
 							<tbody><tr>
 									<td class="tableblock  valign-top">
-										<p><img src="img/hicarrier.jpg" alt="Tux penguin" height="70%" width="70%"></p>
+										<p><img src="img/hicarrier.jpg" alt=""  width="300cm"></p>
 									</td>
 									<td class="tableblock  valign-top">
-										<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Tux penguin" height="70%" width="70%"></p>
+										<p><img src="img/topcover.jpg" alt=""  width="300cm"></p>
 									</td>
 									<td class="tableblock  valign-top">
-										<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Tux penguin" height="70%" width="70%"></p>
+										<p><img src="img/bottomcover.jpg" alt="Tux penguin" width="300cm" ></p>
 									</td>
 									<td class="tableblock  valign-top">
-										<p><img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Tux.png" alt="Tux penguin" height="70%" width="70%"></p>
+										<p><img src="img/LH01.jpg" alt="Tux penguin"  width="300cm"></p>
 									</td>
 								</tr>
 							</tbody>
-							<ol>
-								<li>The fixture for the hand insertion is pending. Three days is needed for the manufactoring.</li>
-								<li>Hot material is used for not damaging the top cover.</li>
+							<ol class="fixtures">
+								<li>The fixture for the hand insertion is pending. Four days is needed for the manufactoring.</li>
+								<li>Hot melting material is used for not damaging the top cover.</li>
 								<li>An poka-yole design is added to the bottom cover fixture carriers.</li>
-								<li>Modification for assembly line is easy. Only a half day is needed. The difficult part is the modification for the carriers for the functional testing station.</li>
+								<li>Modification for assembly line is easy. Only a half day is needed. The difficult part is the modification of the carriers for the functional testing stations.</li>
 							</ol>
 					</table>
 				</section>
+				<section id="AssemblyDFM">
+					<h2>DFM for the assembly lines</h2>
+					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
+						<colgroup><col style="width:33%"></colgroup>
+							<tbody><tr>
+									<td class="tableblock  valign-top">
+										<p><img src="img/IMAG1489.jpg" alt=""  width="300cm"></p>
+									</td>
+									<td class="tableblock  valign-top">
+										<p><img src="img/IMAG1488.jpg" alt=""  width="300cm"></p>
+									</td>
+									<td class="tableblock  valign-top">
+										<p><img src="img/IMAG1487.jpg" alt="Tux penguin" width="300cm" ></p>
+									</td>
+									<td class="tableblock  valign-top">
+										<p><img src="img/IMAG1486.jpg" alt="Tux penguin"  width="300cm"></p>
+									</td>
+								</tr>
+							</tbody>
+							<ol class="fixtures">
+								<li>Without a Acrylic plate with buje, the PCB or the unit is prone to be damaged. This issue is left for the future.</li>
+								<li>A sufficient number of rolls on the conveyor is needed for not damaging the PCB when screwing.</li>
+								<li>An aluminum support should be added to the conveyor to reduce the vibration.</li>
+								<li>The top cover of HCP92 is prone to be scratched. It is needed to rethink how the top cover is put in the box when performing the assembly. It is not like the models of Technicolor.</li>
+							</ol>
+					</table>
+				</section>
+				<section id="WebProject_1">
+					<h2>SKYWORTH NPI web project</h2>
+					<ol>
+						<li>SKYWORTH NPI check list website</li>
+						<ul>
+							<li>Completeness: <progress value= "80" max="100"> </progress></li>
+							<li>A better user interface is needed. It is left for the future.</li>
+						</ul>
+						<li>Equipment inventory application</li>
+						<ul>
+							<li>Motivation</li>
+							<ul>
+								<li>For other customer assets, CCMX uses only excel files to maintain the status.</li>
+								<li>For CCMX owned assets, a desktop application is used. Assistants used tablets and the scanners to read the labels.</li>
+							</ul>
+						</ul>
+					</ol>
 
+				</section>
+				<section id="WebProject_2">
+					<h2>SKYWORTH NPI web project</h2>
+					<ol>
+						<li>Proposal:</li>
+						<ul>
+							<li>To use an excel or to use a tablet plus a scanner is not fashionable enough.</li>
+							<li>CCMX NPI will develop an application for smartphone which uses the camera to scan the QR code.</li>
+							<li>The purpose is not to build a complete application but a <em>beautiful</em> web app, because this app will be shown to SKYWORTH to let them know the latest status for their assets. And thus SKYWORTH will trust CCMX as their best partners.</li>
+						</ul>
+					</ol>
 
+				</section>
+				<section id="WebProject_3">
+					<h2>SKYWORTH NPI web project</h2>
+					<ul>
+						<li>Choice of the environment:</li>
+					</ul>
+					<table>
+						<thead>
+							<tr>
+								<td>Front end</td>
+								<td>Server</td>
+								<td>Data base</td>
+								<td>Web host</td>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Javascript+css+Html</td>
+								<td>Node.js</td>
+								<td>Google firebase</td>
+								<td>secret</td>
+							</tr>
+						
+						</tbody>
+					</table>
+					<ul>
+						<li>Experiments:</li>
+					</ul>
+					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
+						<colgroup><col style="width:50%"></colgroup>
+							<tbody><tr>
+									<td class="tableblock  valign-top">
+										<p><img src="img/web.png" alt=""  width="300cm"></p>
+									</td>
+									<td class="tableblock  valign-top">
+										<p><img src="img/htca9.png" alt=""  width="300cm"></p>
+									</td>
+								</tr>
+							</tbody>
+					</table>
+				</section>
+				<section id="WebProject_4">
+					<h2>SKYWORTH NPI Web Project</h2>
+					<ol>
+						<li>Result Analysis:</li>
+						<ul>
+							<li>The decode fails to decode the picture taken by HTC A9.</li>
+							<li>Pros of an web app: universal, clients do not need to install it but only uses Chrome. </li>
+							<li>Cons of an web app: not able to decode the image for some cases.</li>
+						</ul>
+						<li>Improvement:</li>
+						<ul>
+							<li>CCMX IT <em>Tony Zhu</em> will print larger labels for a better photo resolution.</li>
+						</ul>
+					</ol>
+
+				
+				</section>
+				<section id="WebProject_5">
+					<h2>SKYWORTH NPI Web Project</h2>
+					<ol>
+						<li>Possible user interface :</li>
+					</ol>
+					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
+						<colgroup><col style="width:50%"></colgroup>
+							<tbody><tr>
+									<td class="tableblock  valign-top">
+										<p><img src="img/ui1.PNG" alt=""  width="250cm"></p>
+									</td>
+									<td class="tableblock  valign-top">
+										<p><img src="img/ui2.PNG" alt=""  width="250cm"></p>
+									</td>
+								</tr>
+							</tbody>
+					</table>
+
+				
+				</section>
+				<section id="thanku">
+			<h1>Thank You!</h1>
+				</section>
+				
 			</div>
 		</div>
 
