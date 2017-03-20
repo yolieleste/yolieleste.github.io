@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>SKYWORTH NPI WK10</title>
+		<title>SKYWORTH NPI WK11</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/white.css">
@@ -18,7 +18,7 @@
 			    font-size: 65%;
 			  }
 
-			 .reveal ol.fixtures{
+			 .reveal ul{
 				font-size: 65%;
 			 }
 		</style>
@@ -36,281 +36,93 @@
 		<div class="reveal">
 			<div class="slides">
 				<section id="title">
-					<h2>CCMX-SKYWORTH NPI Report WK 10</h2><br>
+					<h2>CCMX-SKYWORTH NPI Report WK 11</h2><br>
 					<p><a href="http://yolieleste.pythonanywhere.com" target="_blank">Abram Yoli Hsu</a></p>
 				
 				</section>
-				<section id="Outline">
-					<h2>Outline</h2>
+				<section id="toc">
+					<h2>Table of Contents</h2>
 					<ol>
-						<li>Advance in indirect material preparation</li>
-						<li>Advance in manufacturing carrier fixture</li>
-						<li>SKYWORTH npi web app projects</li>
+						<li>Improvement on the screwing process</li>
+            <li>Appendix:</li>
+            <ol>
+              <li>Line 5 statistics as reference</li>
+              <li>Possibilities for auto printing unit label</li>
+            </ol>
 					</ol>
 				
 				</section>
-				<section id="IndirectMaterial.1">
-					<h2>Advance in the inderict material preparation</h2>
-					<table id="commonIndirectMaterial">
-						<thead>
-							<tr>
-								<td>Item</td>
-								<td>Description</td>
-								<td>NKG part number</td>
-								<td>BOM included</td>
-								<td>Status</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Yellow adhesive</td>
-								<td>AHSKS3210B4</td>
-								<td>No</td>
-								<td>On the way</td>
-
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Thermal grease</td>
-								<td>AHSK10001A1</td>
-								<td>No</td>
-								<td>Received</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Ribbon for PCB</td>
-								<td>AHSSCZEB508</td>
-								<td>Yes</td>
-								<td>In stock</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Ribbon for Carton</td>
-								<td>AHSSCBRA504</td>
-								<td>Yes</td>
-								<td>In Stock</td>
-							</tr>
-							<tr>
-								<td>5</td>
-								<td>Ribbon for unit</td>
-								<td>XXRBWAXRES5</td>
-								<td>No registered in the System</td>
-								<td>In stock</td>
-							</tr>
-						
-						</tbody>
-					</table>
-				
-				</section>
-				<section id="IndirectMaterial.2">
-					<h2>Advance in the inderict material preparation</h2>
-					<table id="commonIndirectMaterial">
-						<thead>
-							<tr>
-								<td font-size=5pt>Item</td>
-								<td>Description</td>
-								<td>NKG part number</td>
-								<td>BOM included</td>
-								<td>Status</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>Solder Bar: RF629-B</td>
-								<td>AHSRF629B06</td>
-								<td>Yes</td>
-								<td>In stock</td>
-
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>Solder Paste: PF606-P25</td>
-								<td>AHSPF606P10</td>
-								<td>Yes</td>
-								<td>In Stock</td>
-							</tr>
-							<tr>
-								<td>3</td>
-								<td>Wave Flux: EF-6100P</td>
-								<td>AHFEF6100P1</td>
-								<td>Yes</td>
-								<td>In stock</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>Solder Wire: PF629-R</td>
-								<td>AHSPF629R06</td>
-								<td>Yes</td>
-								<td>In Stock</td>
-							</tr>
-						
-						</tbody>
-					</table>
-				
-				</section>
-				<section id="FixtureDFM">
-					<h2>DFM for the carriers & assembly lines</h2>
-					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
-						<colgroup><col style="width:33%"></colgroup>
-							<tbody><tr>
-									<td class="tableblock  valign-top">
-										<p><img src="img/hicarrier.jpg" alt=""  width="300cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/topcover.jpg" alt=""  width="300cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/bottomcover.jpg" alt="Tux penguin" width="300cm" ></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/LH01.jpg" alt="Tux penguin"  width="300cm"></p>
-									</td>
-								</tr>
-							</tbody>
-							<ol class="fixtures">
-								<li>The fixture for the hand insertion is pending. Four days is needed for the manufactoring.</li>
-								<li>Hot melting material is used for not damaging the top cover.</li>
-								<li>An poka-yole design is added to the bottom cover fixture carriers.</li>
-								<li>Modification for assembly line is easy. Only a half day is needed. The difficult part is the modification of the carriers for the functional testing stations.</li>
-							</ol>
-					</table>
-				</section>
-				<section id="AssemblyDFM">
-					<h2>DFM for the assembly lines</h2>
-					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
-						<colgroup><col style="width:33%"></colgroup>
-							<tbody><tr>
-									<td class="tableblock  valign-top">
-										<p><img src="img/IMAG1489.jpg" alt=""  width="300cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/IMAG1488.jpg" alt=""  width="300cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/IMAG1487.jpg" alt="Tux penguin" width="300cm" ></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/IMAG1486.jpg" alt="Tux penguin"  width="300cm"></p>
-									</td>
-								</tr>
-							</tbody>
-							<ol class="fixtures">
-								<li>Without a Acrylic plate with buje, the PCB or the unit is prone to be damaged. This issue is left for the future.</li>
-								<li>A sufficient number of rolls on the conveyor is needed for not damaging the PCB when screwing.</li>
-								<li>An aluminum support should be added to the conveyor to reduce the vibration.</li>
-								<li>The top cover of HCP92 is prone to be scratched. It is needed to rethink how the top cover is put in the box when performing the assembly. It is not like the models of Technicolor.</li>
-							</ol>
-					</table>
-				</section>
-				<section id="WebProject_1">
-					<h2>SKYWORTH NPI web project</h2>
-					<ol>
-						<li>SKYWORTH NPI check list website</li>
-						<ul>
-							<li>Completeness: <progress value= "80" max="100"> </progress></li>
-							<li>A better user interface is needed. It is left for the future.</li>
+				<section id="From Technicolor Experience.1">
+					<h2>Screw Driver Error</h2>
+					<ul class = "RootCause">
+            <li>Every HCP92 is equipped with 7 screws inside. (Only 3 for LH01 of Technicolor.)</li>
+						<li>The main cause for a scrap unit during the screwing.</li>
+						<ul> 
+							<li>
+								Material issue, Screw Threads are not well manufactured.
+							</li>
+							<li>
+								Torque Force is not sufficient for inserting the screws
+							</li>
+							<li>
+								An improved design for the guard when screwing is needed.		
+							</li>
 						</ul>
-						<li>Equipment inventory application</li>
-						<ul>
-							<li>Motivation</li>
-							<ul>
-								<li>For other customer assets, CCMX uses only excel files to maintain the status.</li>
-								<li>For CCMX owned assets, a desktop application is used. Assistants used tablets and the scanners to read the labels.</li>
-							</ul>
-						</ul>
-					</ol>
-
-				</section>
-				<section id="WebProject_2">
-					<h2>SKYWORTH NPI web project</h2>
-					<ol>
-						<li>Proposal:</li>
-						<ul>
-							<li>To use an excel or to use a tablet plus a scanner is not fashionable enough.</li>
-							<li>CCMX NPI will develop an application for smartphone which uses the camera to scan the QR code.</li>
-							<li>The purpose is not to build a complete application but a <em>beautiful</em> web app, because this app will be shown to SKYWORTH to let them know the latest status for their assets. And thus SKYWORTH will trust CCMX as their best partners.</li>
-						</ul>
-					</ol>
-
-				</section>
-				<section id="WebProject_3">
-					<h2>SKYWORTH NPI web project</h2>
-					<ul>
-						<li>Choice of the environment:</li>
+						</li>
 					</ul>
-					<table>
-						<thead>
-							<tr>
-								<td>Front end</td>
-								<td>Server</td>
-								<td>Data base</td>
-								<td>Web host</td>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>Javascript+css+Html</td>
-								<td>Node.js</td>
-								<td>Google firebase</td>
-								<td>secret</td>
-							</tr>
-						
-						</tbody>
-					</table>
-					<ul>
-						<li>Experiments:</li>
-					</ul>
-					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
-						<colgroup><col style="width:50%"></colgroup>
-							<tbody><tr>
-									<td class="tableblock  valign-top">
-										<p><img src="img/web.png" alt=""  width="300cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/htca9.png" alt=""  width="300cm"></p>
-									</td>
-								</tr>
-							</tbody>
-					</table>
-				</section>
-				<section id="WebProject_4">
-					<h2>SKYWORTH NPI Web Project</h2>
-					<ol>
-						<li>Result Analysis:</li>
-						<ul>
-							<li>The decode fails to decode the picture taken by HTC A9.</li>
-							<li>Pros of an web app: universal, clients do not need to install it but only uses Chrome. </li>
-							<li>Cons of an web app: not able to decode the image for some cases.</li>
-						</ul>
-						<li>Improvement:</li>
-						<ul>
-							<li>CCMX IT <em>Tony Zhu</em> will print larger labels for a better photo resolution.</li>
-						</ul>
-					</ol>
 
-				
-				</section>
-				<section id="WebProject_5">
-					<h2>SKYWORTH NPI Web Project</h2>
-					<ol>
-						<li>Possible user interface :</li>
-					</ol>
-					<table class="tableblock frame-all grid-all custom-style" style="width:100%" cellspacing="0" cellpadding="0">
-						<colgroup><col style="width:50%"></colgroup>
-							<tbody><tr>
-									<td class="tableblock  valign-top">
-										<p><img src="img/ui1.PNG" alt=""  width="250cm"></p>
-									</td>
-									<td class="tableblock  valign-top">
-										<p><img src="img/ui2.PNG" alt=""  width="250cm"></p>
-									</td>
-								</tr>
-							</tbody>
-					</table>
 
-				
+<div class="paragraph"><p><span class="image"><img src="img/guard.png" alt="bucket_and_pail" width="550"></span> <span class="image"><img src="img/IMAG1525.jpg" alt="cord_and_cable" width="180"></span></p></div></section>
+				</section>
+				<section id="Observation" >
+					<h2>Observation</h2>
+          <ul>
+            <li>The defected PCBAs can be easily repaired.</li>
+            <li>Further damages happen frequently.</li>
+            <li>The repair history is not recorded in the MIS system.</li>
+          </ul>
+<div class="paragraph"><p><span class="image"><img src="img/bitmap.png" alt="bucket_and_pail" width="400"></span> <span class="image"><img src="img/IMAG1530.jpg" alt="cord_and_cable" width="400"></span></p></div></section>
+				</section>
+				<section id="CorrectiveAction" >
+					<h2>Corrective Action</h2>
+          <ul>
+            <li>The guard is now tightly closed to the PCBA.</li>
+            <li>Change the working instruction to increase the force.</li>
+            <li>Make sure the BGA is not damaged while change the torque force.</li>
+          </ul>
+<div class="paragraph"><p><span class="image"><img src="img/IMAG1513.jpg" alt="bucket_and_pail" width="400"></span> <span class="image"><img src="img/BGA.png" alt="cord_and_cable" width="400"></span></p></div></section>
+				</section>
+				<section id="InsightSKYWORTH" >
+					<h2>Further improvement on the SKYWORTH production line</h2>
+          <ul>
+            <li>因為維修螺絲用到的工具很容易傷到PCB(拔出螺絲劃到電阻電容)，但是拔螺絲的版子沒被系統計錄。(There is no repair record related to changing the screws.)
+            <li>因為有癌症的人再怎麼修理也是會復發。所以OBA不應該是隨機抽點，而是只挑鎖螺絲失敗的機頂盒檢查。(The units that has been changed the screws are more likely to fail during the OBA test. Therefore, we should only choose them as the targets for the OBA testing. )</li>
+            <li>拔出螺絲很快，為了能SKYWORTH連貨出號，產線應該嵌入一個快速維修站。SKYWORTH requests the shipping pallets to contain the consecutive numbers of units. Therefore, A repair station should be embedded to the assembly line in order to fix the failure quickly.</li>
+          </ul>
+<div class="paragraph"><p><span class="image"><img src="img/Untitled.png" alt="bucket_and_pail" width="250"></span></p></div></section>
+				</section>
+				<section id="Implementation" >
+					<h2>Implementation</h2>
+          <ul>
+            <li>CCMX PM can request MIS to record those defected units during the screwing process.</li>
+            <li>Another approach is to design an web app. The operators of the repair station and OBA stations need to open the CHROME in order to record and test the defected units. </li>
+          </ul>
+<div class="paragraph"><p><span class="image"><img src="img/oba.png" alt="bucket_and_pail" width="800"></span></p></div></section>
+        </section>
+				<section id="Appendix" >
+					<h2>Appendix</h2>
+				</section>
+				<section id="Line5statistic" >
+					<h2>Line 5 statistics as reference</h2>
+           <canvas id="myChart" width="400" height="200"></canvas> 
+				</section>
+				<section id="PossibilitiesPrinting" >
+					<h2>Possibilities for auto printing labels</h2>
+          <ul>
+            <li>If CCMX wants to implement auto printing labels for SKYWORTH models, a re-design of fixture carriers is needed.</li>
+            <li>Reason: there are three main place for calibrating the correctness printing. One of them is an adjustable fixture. However, current fixtures use a fixed design.</li>
+          </ul>
+<div class="paragraph"><p><span class="image"><img src="img/IMAG1554.jpg" alt="bucket_and_pail" width="300"></span><span class="image"><img src="img/bottomcover.jpg" alt="bucket_and_pail" width="300"></span></p></div></section>
 				</section>
 				<section id="thanku">
 			<h1>Thank You!</h1>
@@ -321,6 +133,7 @@
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration
@@ -336,5 +149,28 @@
 				]
 			});
 		</script>
+    <script>
+var ctx = document.getElementById('myChart');
+var myChart = new Chart(ctx, {
+  type: 'line',
+  data: {
+    labels: ['Mon(3/13)', 'Tue(3/14)', 'Wed(3/15)', 'Thu(3/16)', 'Fri(3/17)', 'Sat(3/18)'],
+    datasets: [{
+      label: 'Heat-sink screwing defected units',
+      data: [,72 ,38 ,200 ,128 , ],
+      backgroundColor: "rgba(153,255,51,0.4)"
+    }, {
+      label: 'Screwing scrap units',
+      data: [, 8, 13, 108, 72, ],
+      backgroundColor: "rgba(255,153,0,0.4)"
+    },{
+      label: 'Printing label failures',
+      data: [, , , 111, 30, ],
+      backgroundColor: "rgba(52,129,232,0.9)"
+    }
+    ]
+  }
+});
+    </script>
 	</body>
 </html>
